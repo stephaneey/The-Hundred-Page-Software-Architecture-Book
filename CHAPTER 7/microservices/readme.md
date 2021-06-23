@@ -16,8 +16,8 @@ Install the [Dapr CLI](https://docs.dapr.io/getting-started/install-dapr-cli)
 Note that I used the runtime version 1.0.1. Feel free to use a more recent runtime but if you want to run the example in the same context, use 1.0.1
 # Installing RabbitMQ and retrieving the default password
 To be cloud-neutral, I used a self-hosted RabbitMQ instance. To install it in your cluster:
-
-`helm install --namespace microserviceapp`
+`helm repo update`
+`helm install rabbitmq stable/rabbitmq --namespace microserviceapp`
 
 To retrieve the default password, run the following commands:
 
